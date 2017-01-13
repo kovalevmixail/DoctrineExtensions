@@ -1,9 +1,20 @@
 {
     "name": "beberlei/DoctrineExtensions",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kovalevmixail/doctrine2.git"
+        }
+    ],
     "require": {
-        "doctrine/orm": "*"
+        "doctrine/orm": "dev-2.4-fix-parent-id"
     },
     "autoload": {
         "psr-0": {"DoctrineExtensions" : "lib/"}
+    },
+    "config": {
+        "platform": {
+            "php": "5.3.29"
+      }
     }
 }
